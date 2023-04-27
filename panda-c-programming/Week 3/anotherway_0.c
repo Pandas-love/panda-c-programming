@@ -1,4 +1,4 @@
-//letter will be shown as order as input was.
+// letter will be shown as order as input was.
 
 // #include<stdio.h>
 // #include<string.h>
@@ -24,7 +24,7 @@
 //     return 0;
 // }
 
-//Descending order of letter
+// Descending order of letter
 
 // #include<stdio.h>
 // #include<string.h>
