@@ -20,6 +20,8 @@ int main()
                 return 0;
             }
         }
+            //we cant declare count[m]={0} as m not declare yet. Thats why we applied this process
+            //we declare int count[m] then run a loop to initialize zero in each room of the array.
             for (int i = 1; i <= m; i++)
             {
                 count[i]=0;
