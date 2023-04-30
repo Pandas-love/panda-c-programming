@@ -9,12 +9,11 @@ int main()
         {
             if(a==0&&b!=0||a!=0&&b==0||a!=0&&b!=0)
             {
-                int count=0;int p=1;
-                for (int i = 1; i <= 100; i=i+(a+b))
+                int count=0;
+                for (int i = 0; i < 10; i++)
                 {
                         int even=0,odd=0;
-                        int limit=(a+b)*p;
-                    for (int j = i; j <= limit; j++)
+                    for (int j = i; j < i+a+b; j++)
                     {
                         if (j%2==0)
                         {
@@ -25,7 +24,6 @@ int main()
                             odd++;
                         }
                     }
-                        p++;
                     if (even==b&&odd==a)
                         {
                             printf("YES");
@@ -36,7 +34,7 @@ int main()
                             count++;
                         }   
                 }
-                if(count==100/(a+b))
+                if(count==10)
                         {
                             printf("NO");
                         }
