@@ -3,5 +3,6 @@
         "stdio.h": "c"
     },
     "C_Cpp.errorSquiggles": "enabled",
-    "problems.showCurrentInStatus": true
+    "problems.showCurrentInStatus": true,
+    "editor.language.brackets": []
 }

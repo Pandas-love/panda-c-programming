@@ -20,11 +20,11 @@
 //         {
 //             printf("Both are equal");break;
 //         }
-//         else if (a=='\0')
+//         else if (a[i]=='\0')
 //         {
 //             printf("The bigger word is: %s",b);break;
 //         }
-//         else if (b=='\0')
+//         else if (b[i]=='\0')
 //         {
 //             printf("The bigger word is: %s",a);break;
 //         }
