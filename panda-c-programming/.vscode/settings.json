@@ -4,5 +4,6 @@
     },
     "C_Cpp.errorSquiggles": "enabled",
     "problems.showCurrentInStatus": true,
-    "editor.language.brackets": []
+    "editor.language.brackets": [],
+    "C_Cpp.default.compilerPath": "C:\\MinGW\\bin\\gcc.exe"
 }
