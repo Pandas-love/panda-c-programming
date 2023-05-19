@@ -23,11 +23,11 @@ int main()
         {
             for (int j = 0; j < n; j++)
             {
-                if (marks[i] > marks[j] || marks[i] == marks[j])
+                if (max > marks[j] || max == marks[j])
                 {
-                    max = marks[i];
+                    max = max;
                 }
-                else if (marks[i] < marks[j])
+                else if (max < marks[j])
                 {
                     max = marks[j];
                 }
