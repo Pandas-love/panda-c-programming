@@ -1,55 +1,46 @@
 #include <stdio.h>
-void mini(long long int *q, int n)
-{
-    for (int i = 0; i < n; i++)
-    {
-        for (int j = i + 1; j < n; j++)
-        {
-            if (*(q + i) > *(q + j))
-            {
-                int temp = *(q + i);
-                *(q + i) = *(q + j);
-                *(q + j) = temp;
-            }
-            else
-            {
-                continue;
-            }
-        }
-    }
-    printf("%lld ", *q);
-}
+
 int main()
 {
-    int m, n, p = 0;
-    scanf("%d%d", &m, &n);
-    if (1 <= n && n <= 100000 && 1 <= m && m <= 100000)
-    {
+    int N, K;
+    scanf("%d %d", &N, &K);
 
-        long long int arr[m], sort[n];
-        for (int i = 0; i < m; i++)
-        {
-            scanf("%lld", &arr[i]);
-            if (-1000000000 <= arr[i] && arr[i] <= 1000000000)
-            {
-                continue;
-            }
-            else
-            {
-                return 0;
-            }
-        }
-        for (int i = 0; i < m; i = i + n)
-        {
-            int s = 0;
-            p = n + i;
-            for (int j = i + 0; j < p; j++)
-            {
-                sort[s] = arr[j];
-                s++;
-            }
-            mini(&sort[0], n);
-        }
+    int numbers[N];
+    for (int i = 0; i < N; i++)
+    {
+        scanf("%d", &numbers[i]);
     }
+
+    int groups = N / K;
+    int lastGroupSize = N % K;
+
+    // Print minimum of each group
+    for (int i = 0; i < groups; i++)
+    {
+        int min = numbers[i * K];
+        for (int j = 1; j < K; j++)
+        {
+            if (numbers[i * K + j] < min)
+            {
+                min = numbers[i * K + j];
+            }
+        }
+        printf("%d ", min);
+    }
+
+    // Print minimum of the last group
+    if (lastGroupSize > 0)
+    {
+        int min = numbers[N - lastGroupSize];
+        for (int i = N - lastGroupSize + 1; i < N; i++)
+        {
+            if (numbers[i] < min)
+            {
+                min = numbers[i];
+            }
+        }
+        printf("%d ", min);
+    }
+
     return 0;
 }
