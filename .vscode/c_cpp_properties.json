@@ -1,0 +1,32 @@
+{
+    "configurations": [
+        {
+            "name": "",
+            "includePath": [
+                "${workspaceFolder}/**"
+            ],
+            "defines": [
+                "_DEBUG",
+                "UNICODE",
+                "_UNICODE"
+            ],
+            "intelliSenseMode": "windows-gcc-x64",
+            "cStandard": "${default}",
+            "cppStandard": "${default}",
+            "compilerPath": ""
+        },
+        {
+            "name": "",
+            "includePath": [
+                "${workspaceFolder}/**"
+            ],
+            "defines": [
+                "_DEBUG",
+                "UNICODE",
+                "_UNICODE"
+            ],
+            "intelliSenseMode": "windows-msvc-x64"
+        }
+    ],
+    "version": 4
+}
